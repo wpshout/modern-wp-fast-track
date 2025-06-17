@@ -1,0 +1,21 @@
+services:
+
+  mysql:
+    image: mysql:8.0
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_USER: wp
+      MYSQL_PASSWORD: wp
+      MYSQL_DATABASE: wp
+    volumes:
+      - db_data:/var/lib/mysql
+
+  wp:
+    image: wordpress:php8.4-apache
+    ports:
+      - 8080:80
+    volumes:
+      - .:/var/www/html
+
+volumes:
+  db_data:

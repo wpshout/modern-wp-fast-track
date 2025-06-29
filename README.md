@@ -22,23 +22,23 @@ Using your terminal:
 
 1. Clone this repository:
 
-      git clone https://github.com/wpshout/modern-wp-fast-track.git
+        git clone https://github.com/wpshout/modern-wp-fast-track.git
 
 2. Navigate to the `modern-wp-fast-track` directory:
 
-      cd modern-wp-fast-track
+        cd modern-wp-fast-track
 
 3. Install project dependencies:
 
-      npm run cli -- composer install
+        npm run cli -- composer install
 
 4. Start the development environment:
 
-      npm run start
+        npm run start
 
 5. Setup WordPress:
 
-      npm run wp -- core install
+        npm run wp -- core install
 
     which also creates a user with `admin/password` credentials.
 

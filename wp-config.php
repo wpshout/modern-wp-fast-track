@@ -14,6 +14,10 @@ $table_prefix = 'wp_';
 define( 'WP_CONTENT_DIR', __DIR__ . '/wp-content' );
 define( 'WP_CONTENT_URL', sprintf( 'http://%s/wp-content', $_SERVER['HTTP_HOST'] ) );
 
+// Keep wordpress outside of the web root.
+define( 'WP_SITEURL', sprintf( 'http://%s/wordpress', $_SERVER['HTTP_HOST'] ) );
+define( 'WP_HOME', sprintf( 'http://%s', $_SERVER['HTTP_HOST'] ) );
+
 /** Absolute path to the WordPress directory. */
 if ( ! defined( 'ABSPATH' ) ) {
 	define( 'ABSPATH', __DIR__ . '/wordpress/' );

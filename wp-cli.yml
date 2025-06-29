@@ -1,0 +1,17 @@
+path: wordpress
+url: wpshout.wp-env.net:8080
+
+core install:
+  skip-config: true
+  title: WPShout WP Fast Track
+  admin_user: admin
+  admin_password: password
+  admin_email: local@wpshout.wpenv.net
+
+core multisite-install:
+  skip-config: true
+  subdomains: true
+  title: WPShout WP Fast Track Multisite
+  admin_user: admin
+  admin_password: password
+  admin_email: local@wpshout.wpenv.net

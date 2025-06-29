@@ -11,11 +11,31 @@ services:
       - db_data:/var/lib/mysql
 
   wp:
-    image: wordpress:php8.4-apache
+    build: ./tools/docker/wordpress
     ports:
       - 8080:80
     volumes:
       - .:/var/www/html
+    environment:
+      SMTPSERVER: mailhog
+    depends_on:
+      - mysql
+
+  phpmyadmin:
+    image: phpmyadmin:5.2.2-apache
+    ports:
+      - 8081:80
+    environment:
+      PMA_HOST: mysql
+      PMA_USER: wp
+      PMA_PASSWORD: wp
+    depends_on:
+      - mysql
+
+  mailhog:
+    image: mailhog/mailhog
+    ports:
+      - 8085:8025
 
 volumes:
   db_data:

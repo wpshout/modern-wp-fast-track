@@ -1,0 +1,8 @@
+{
+	"recommendations": [
+		"bmewburn.vscode-intelephense-client",
+		"ms-azuretools.vscode-docker",
+		"DavidAnson.vscode-markdownlint",
+		"streetsidesoftware.code-spell-checker"
+	]
+}

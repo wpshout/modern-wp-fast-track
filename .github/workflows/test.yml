@@ -18,6 +18,9 @@ jobs:
           node-version-file: .nvmrc
           cache: 'npm'
 
+      - name: Debug Docker permissions
+        run: npm run cli -- bash -c "id && ls -lah"
+
       - name: Install dependencies
         run: npm run cli -- composer install
 

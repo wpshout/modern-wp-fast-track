@@ -19,7 +19,7 @@ jobs:
           cache: 'npm'
 
       - name: Make project root directory writable by Docker user
-        run: docker compose run --rm wp chown www-data /var/www/html
+        run: docker compose run --remove-orphans wp chown -R www-data /var/www/html
 
       - name: Install dependencies
         run: npm run cli -- composer install

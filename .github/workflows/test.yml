@@ -18,6 +18,9 @@ jobs:
           node-version-file: .nvmrc
           cache: 'npm'
 
+      - name: Debug project file permissions
+        run: ls -lah
+
       - name: Make project root directory writable by Docker user
         run: docker compose run --remove-orphans wp chown -R www-data /var/www/html
 

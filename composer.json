@@ -1,10 +1,26 @@
 {
+    "repositories":[
+        {
+            "type": "composer",
+            "url": "https://wpackagist.org",
+            "only": [
+                "wpackagist-plugin/*",
+                "wpackagist-theme/*"
+            ]
+        }
+    ],
     "require": {
-        "roots/wordpress": "^6.8"
+        "roots/wordpress": "^6.8",
+        "wp-cli/wp-cli-bundle": "^2.12",
+        "wpackagist-theme/twentytwentyfive": "^1.2"
     },
     "config": {
         "allow-plugins": {
-            "roots/wordpress-core-installer": true
+            "roots/wordpress-core-installer": true,
+            "composer/installers": true
         }
+    },
+    "scripts": {
+        "wp": "wp"
     }
 }

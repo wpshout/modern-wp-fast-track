@@ -10,6 +10,11 @@ define( 'DB_COLLATE', '' );
 
 $table_prefix = 'wp_';
 
+// Wait up to 10 seconds for DB to be ready.
+if ( $db_connection = fsockopen( DB_HOST, 3306, $errno, $errstr, 10 ) ) {
+	fclose( $db_connection );
+}
+
 // Keep the wp-contents outside of WP core directory.
 define( 'WP_CONTENT_DIR', __DIR__ . '/wp-content' );
 define( 'WP_CONTENT_URL', sprintf( 'http://%s/wp-content', $_SERVER['HTTP_HOST'] ) );

@@ -1,7 +1,7 @@
 FROM wordpress:php8.3-apache
 
 RUN apt update --yes \
-    && apt install --yes default-mysql-client
+    && apt install --yes netcat-openbsd default-mysql-client
 
 # Install PHP Composer.
 RUN curl --silent https://getcomposer.org/installer \
@@ -11,3 +11,7 @@ RUN curl --silent https://getcomposer.org/installer \
 RUN curl -fsSL https://deb.nodesource.com/setup_20.x \
     | bash - \
 	&& apt-get install nodejs --yes --no-install-recommends
+
+# Install helper utility to wait for DB or anything else to be available over TCP.
+RUN curl https://raw.githubusercontent.com/eficode/wait-for/v2.2.4/wait-for --output /usr/local/bin/wait-for \
+    && chmod +x /usr/local/bin/wait-for

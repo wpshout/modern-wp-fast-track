@@ -1,7 +1,7 @@
 {
 	"private": true,
 	"scripts": {
-		"start": "docker compose up --detach --build",
+		"start": "docker compose up --detach --build --remove-orphans",
 		"logs": "docker compose logs --follow",
 		"stop": "docker compose down",
 		"destroy": "docker compose down --volumes",

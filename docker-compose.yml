@@ -11,7 +11,7 @@ services:
       - db_data:/var/lib/mysql
 
   wp:
-    image: wordpress:php8.4-apache
+    build: ./tools/docker/wordpress
     ports:
       - 8080:80
     volumes:

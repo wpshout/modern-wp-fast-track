@@ -18,6 +18,9 @@ jobs:
           node-version-file: .nvmrc
           cache: 'npm'
 
+      - name: Install dependencies
+        run: npm run cli -- composer install
+
       - name: Start the environment
         run: npm run start
 

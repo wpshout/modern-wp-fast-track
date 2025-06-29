@@ -19,5 +19,16 @@ services:
     depends_on:
       - mysql
 
+  phpmyadmin:
+    image: phpmyadmin:5.2.2-apache
+    ports:
+      - 8081:80
+    environment:
+      PMA_HOST: mysql
+      PMA_USER: wp
+      PMA_PASSWORD: wp
+    depends_on:
+      - mysql
+
 volumes:
   db_data:

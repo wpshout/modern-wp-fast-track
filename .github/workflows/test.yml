@@ -18,17 +18,14 @@ jobs:
           node-version-file: .nvmrc
           cache: 'npm'
 
-      - name: Debug project file permissions
-        run: ls -lah
+      - name: Start the environment
+        run: npm run start
 
       - name: Make project root directory writable by Docker user
         run: docker compose run --remove-orphans wp chown -R www-data /var/www/html
 
       - name: Install dependencies
         run: npm run cli -- composer install
-
-      - name: Start the environment
-        run: npm run start
 
       - name: Setup WordPress
         run: npm run wp -- core install

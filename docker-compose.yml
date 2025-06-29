@@ -16,6 +16,8 @@ services:
       - 8080:80
     volumes:
       - .:/var/www/html
+    environment:
+      SMTPSERVER: mailhog
     depends_on:
       - mysql
 
@@ -29,6 +31,11 @@ services:
       PMA_PASSWORD: wp
     depends_on:
       - mysql
+
+  mailhog:
+    image: mailhog/mailhog
+    ports:
+      - 8085:8025
 
 volumes:
   db_data:

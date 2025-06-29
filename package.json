@@ -5,7 +5,7 @@
 		"logs": "docker compose logs --follow",
 		"stop": "docker compose down",
 		"destroy": "docker compose down --volumes",
-		"cli": "docker compose run --rm --user=www-data wp",
+		"cli": "docker compose run --remove-orphans --user=www-data wp",
 		"shell": "npm run cli -- bash",
 		"wp": "npm run cli -- composer wp"
 	}

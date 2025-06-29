@@ -18,8 +18,8 @@ jobs:
           node-version-file: .nvmrc
           cache: 'npm'
 
-      - name: Debug Docker permissions
-        run: npm run cli -- bash -c "id && ls -lah"
+      - name: Make project root directory writable by Docker user
+        run: npm run cli -- chown www-data /var/www/html
 
       - name: Install dependencies
         run: npm run cli -- composer install

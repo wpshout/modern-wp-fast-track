@@ -42,7 +42,12 @@ Using your terminal:
 
     which also creates a user with `admin/password` credentials.
 
-6. Visit [wpshout.wp-env.net:8080/wordpress/wp-login.php](http://wpshout.wp-env.net:8080/wordpress/wp-login.php) to login or [wpshout.wp-env.net:8080](http://wpshout.wp-env.net:8080) to navigate the site.
+6. Visit any of the available services:
+
+   - Homepage: [wpshout.wp-env.net:8080](http://wpshout.wp-env.net:8080)
+   - WP admin: [wpshout.wp-env.net:8080/wordpress/wp-login.php](http://wpshout.wp-env.net:8080/wordpress/wp-login.php) (username: `admin`, password: `password`)
+   - PHPMyAdmin: [wpshout.wp-env.net:8081](http://wpshout.wp-env.net:8081)
+   - MailHog: [wpshout.wp-env.net:8085](http://wpshout.wp-env.net:8085)
 
 ## Scripts
 

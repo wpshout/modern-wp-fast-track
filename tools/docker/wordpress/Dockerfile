@@ -1,7 +1,15 @@
 FROM wordpress:php8.3-apache
 
-RUN apt update --yes \
-	&& apt install --yes netcat-openbsd default-mysql-client msmtp
+RUN apt update \
+	&& apt install --yes --no-install-recommends \
+		# For this Dockerfile to download files.
+		curl \
+		# For wait-for utility.
+		netcat-openbsd \
+		# For WP-CLI to work with DB directly.
+		default-mysql-client \
+		# SMTP client to forward PHP emails.
+		msmtp
 
 # Install PHP Composer.
 RUN curl --silent https://getcomposer.org/installer \

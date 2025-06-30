@@ -2,6 +2,7 @@
 	"recommendations": [
 		"bmewburn.vscode-intelephense-client",
 		"ms-azuretools.vscode-docker",
+		"github.vscode-github-actions",
 		"DavidAnson.vscode-markdownlint",
 		"streetsidesoftware.code-spell-checker"
 	]

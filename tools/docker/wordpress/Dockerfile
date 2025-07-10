@@ -9,7 +9,9 @@ RUN apt update \
 		# For WP-CLI to work with DB directly.
 		default-mysql-client \
 		# SMTP client to forward PHP emails.
-		msmtp
+		msmtp \
+		# For Composer and WP-CLI.
+		unzip
 
 # Install PHP Composer.
 RUN curl --silent https://getcomposer.org/installer \

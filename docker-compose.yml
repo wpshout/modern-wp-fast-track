@@ -18,6 +18,9 @@ services:
       - .:/var/www/html
     environment:
       SMTPSERVER: mailhog
+      XDEBUG_CONFIG: client_host=host.docker.internal
+      XDEBUG_MODE: debug
+      XDEBUG_TRIGGER: 1
     depends_on:
       - mysql
 

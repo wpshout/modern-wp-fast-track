@@ -2,6 +2,13 @@
 
 Working repository for the [Modern WordPress Fast Track course](https://wpshout.com/wordpress-development-course/).
 
+View branches for specific course modules:
+
+- [Module 2](https://github.com/wpshout/modern-wp-fast-track/tree/module-3-start)
+- [Module 3](https://github.com/wpshout/modern-wp-fast-track/tree/module-3-end)
+- [Module 4](https://github.com/wpshout/modern-wp-fast-track/tree/module-4)
+- [Module 5](https://github.com/wpshout/modern-wp-fast-track/tree/module-5)
+
 ## Requirements
 
 - [Docker](https://docs.docker.com/desktop/)

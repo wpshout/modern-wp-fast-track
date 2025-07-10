@@ -1,4 +1,5 @@
 {
+	"name": "@wpshout/modern-wp-fast-track",
 	"private": true,
 	"scripts": {
 		"start": "docker compose up --detach --build --remove-orphans",

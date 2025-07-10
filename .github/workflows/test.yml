@@ -22,7 +22,7 @@ jobs:
         run: npm run start
 
       - name: Wait for database to be ready
-        run: docker compose run --remove-orphans wp wait-for mysql:3306
+        run: npm run cli -- wait-for mysql:3306
 
       - name: Make project root directory writable by Docker user
         run: docker compose run --remove-orphans wp chown -R www-data /var/www/html

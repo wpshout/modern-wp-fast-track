@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "5432bf2e02b27acd31ff3dee12c6e30b",
+    "content-hash": "cd619bf02a00c03f53eed731a1805c62",
     "packages": [
         {
             "name": "composer/ca-bundle",
@@ -5041,6 +5041,24 @@
                 "source": "https://github.com/wp-cli/wp-config-transformer/tree/v1.4.2"
             },
             "time": "2025-03-31T08:37:05+00:00"
+        },
+        {
+            "name": "wpackagist-plugin/rewrite-rules-inspector",
+            "version": "1.4.0",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/rewrite-rules-inspector/",
+                "reference": "tags/1.4.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/rewrite-rules-inspector.1.4.0.zip"
+            },
+            "require": {
+                "composer/installers": "^1.0 || ^2.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/rewrite-rules-inspector/"
         },
         {
             "name": "wpackagist-theme/twentytwentyfive",

@@ -1,3 +1,4 @@
 *
 !.gitignore
 !/wpshout-theme/
+!/wpshout-theme/**

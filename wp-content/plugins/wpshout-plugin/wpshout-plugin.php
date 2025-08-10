@@ -30,3 +30,22 @@ function wpshout_register_block_styles() {
 		]
 	);
 }
+
+// Customize settings and controls for theme and blocks.
+add_filter( 'wp_theme_json_data_theme', 'wpshout_theme_json_data' );
+
+function wpshout_theme_json_data( $theme_json ) {
+	$theme_json_overrides = [
+		'version' => 2,
+		'settings' => [
+			'color' => [
+				// Enforce theme color token usage instead of custom picker.
+				'custom' => false,
+				'customDuotone' => false,
+				'customGradient' => false,
+			]
+		]
+	];
+
+	return $theme_json->update_with( $theme_json_overrides );
+}

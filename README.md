@@ -8,6 +8,8 @@ View branches for specific course modules:
 - [Module 3](https://github.com/wpshout/modern-wp-fast-track/tree/module-3-end)
 - [Module 4](https://github.com/wpshout/modern-wp-fast-track/tree/module-4)
 - [Module 5](https://github.com/wpshout/modern-wp-fast-track/tree/module-5)
+- Module 6 (no code)
+- [Module 7](https://github.com/wpshout/modern-wp-fast-track/tree/module-7)
 
 ## Requirements
 

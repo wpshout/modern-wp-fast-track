@@ -1,0 +1,9 @@
+{
+    "$schema": "https://schemas.wp.org/trunk/block.json",
+    "name": "wpshout/faq-item",
+    "title": "FAQ Item",
+    "editorScript": "file:./index.js",
+    "parent": [ 
+        "wpshout/faq" 
+    ]
+}

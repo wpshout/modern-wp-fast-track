@@ -3,6 +3,9 @@
     "name": "wpshout/faq-item",
     "title": "FAQ Item",
     "attributes": {
+        "open": {
+            "type": "boolean"
+        },
         "question": {
             "type": "string",
             "source": "html",

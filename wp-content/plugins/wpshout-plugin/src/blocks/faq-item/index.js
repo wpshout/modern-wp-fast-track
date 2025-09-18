@@ -1,14 +1,21 @@
 import { registerBlockType } from '@wordpress/blocks';
 import { InnerBlocks, useBlockProps, RichText } from '@wordpress/block-editor';
+import { CheckboxControl } from '@wordpress/components';
 
 registerBlockType( 'wpshout/faq-item', {
     edit: ( { attributes, setAttributes } ) => {
+        const { question, open } = attributes;
         const blockProps = useBlockProps();
 
         return (
             <div { ...blockProps }>
+                <CheckboxControl
+                    label="Expand question by default"
+                    checked={ open }
+                    onChange={ ( value ) => setAttributes( { open: value } ) }
+                />
                 <RichText
-                    value={ attributes.question }
+                    value={ question }
                     tagName="h2"
                     placeholder="FAQ Question"
                     onChange={ ( value ) => setAttributes( { question: value } ) }
@@ -18,13 +25,14 @@ registerBlockType( 'wpshout/faq-item', {
         );
     },
     save: ( { attributes } ) => {
+        const { question, open } = attributes;
         const blockProps = useBlockProps.save();
         
         return (
-            <div { ...blockProps }>
-                <RichText.Content tagName="h2" value={ attributes.question } />
+            <details { ...blockProps } open={ open }>
+                <RichText.Content tagName="summary" value={ question } />
                 <InnerBlocks.Content />
-            </div>
+            </details>
         );
     },
 } );

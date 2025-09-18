@@ -2,6 +2,13 @@
     "$schema": "https://schemas.wp.org/trunk/block.json",
     "name": "wpshout/faq-item",
     "title": "FAQ Item",
+    "attributes": {
+        "question": {
+            "type": "string",
+            "source": "html",
+            "selector": "h2"
+        }
+    },
     "editorScript": "file:./index.js",
     "parent": [ 
         "wpshout/faq" 

@@ -10,7 +10,7 @@
         "question": {
             "type": "string",
             "source": "html",
-            "selector": "h2"
+            "selector": "summary"
         }
     },
     "editorScript": "file:./index.js",

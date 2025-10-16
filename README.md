@@ -5,12 +5,12 @@ Working repository for the [Modern WordPress Fast Track course](https://wpshout.
 View branches for specific course modules:
 
 - [Module 2](https://github.com/wpshout/modern-wp-fast-track/tree/module-3-start)
-- [Module 3](https://github.com/wpshout/modern-wp-fast-track/tree/module-3-end)
-- [Module 4](https://github.com/wpshout/modern-wp-fast-track/tree/module-4)
-- [Module 5](https://github.com/wpshout/modern-wp-fast-track/tree/module-5)
+- [Module 3](https://github.com/wpshout/modern-wp-fast-track/tree/module-3-end) ([changes](https://github.com/wpshout/modern-wp-fast-track/compare/module-3-start..module-3-end))
+- [Module 4](https://github.com/wpshout/modern-wp-fast-track/tree/module-4) ([changes](https://github.com/wpshout/modern-wp-fast-track/compare/module-3-end..module-4))
+- [Module 5](https://github.com/wpshout/modern-wp-fast-track/tree/module-5) ([changes](https://github.com/wpshout/modern-wp-fast-track/compare/module-4..module-5))
 - Module 6 (no code)
-- [Module 7](https://github.com/wpshout/modern-wp-fast-track/tree/module-7)
-- [Module 8](https://github.com/wpshout/modern-wp-fast-track/tree/module-8)
+- [Module 7](https://github.com/wpshout/modern-wp-fast-track/tree/module-7) ([changes](https://github.com/wpshout/modern-wp-fast-track/compare/module-5..module-7))
+- [Module 8](https://github.com/wpshout/modern-wp-fast-track/tree/module-8) ([changes](https://github.com/wpshout/modern-wp-fast-track/compare/module-7..module-8))
 
 ## Requirements
 

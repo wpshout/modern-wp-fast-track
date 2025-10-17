@@ -1,4 +1,4 @@
-import { registerBlockType } from '@wordpress/blocks';
+import { registerBlockType, registerBlockCollection } from '@wordpress/blocks';
 import { InnerBlocks, useBlockProps } from '@wordpress/block-editor';
 import { __ } from '@wordpress/i18n';
 
@@ -39,4 +39,8 @@ registerBlockType( 'wpshout/faq', {
         src: Icon,
         foreground: '#7A61D2',
     }
+} );
+
+registerBlockCollection( 'wpshout', {
+    title: __( 'WPShout', 'wpshout' ),
 } );

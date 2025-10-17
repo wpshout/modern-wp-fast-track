@@ -1,6 +1,7 @@
 import { registerBlockType } from '@wordpress/blocks';
 import { InnerBlocks, useBlockProps, RichText } from '@wordpress/block-editor';
 import { CheckboxControl } from '@wordpress/components';
+import { quote } from '@wordpress/icons';
 
 registerBlockType( 'wpshout/faq-item', {
     edit: ( { attributes, setAttributes } ) => {
@@ -35,4 +36,5 @@ registerBlockType( 'wpshout/faq-item', {
             </details>
         );
     },
+    icon: quote
 } );

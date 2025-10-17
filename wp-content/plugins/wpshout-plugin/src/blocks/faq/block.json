@@ -3,6 +3,7 @@
     "name": "wpshout/faq",
     "title": "FAQ Block",
     "description": "List of frequently asked questions and answers.",
+    "category": "marketing",
     "editorScript": "file:./index.js",
     "allowedBlocks": [ 
         "wpshout/faq-item"

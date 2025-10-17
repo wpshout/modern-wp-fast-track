@@ -36,5 +36,6 @@ registerBlockType( 'wpshout/faq-item', {
             </details>
         );
     },
-    icon: quote
+    icon: quote,
+    category: 'marketing',
 } );

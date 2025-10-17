@@ -20,3 +20,14 @@ function wpshout_register_blocks() {
 		]
 	);
 }
+
+add_filter( 'block_categories_all', 'wpshout_register_block_categories' );
+
+function wpshout_register_block_categories( $categories ) {
+	$categories[] = [
+		'slug'  => 'marketing',
+		'title' => __( 'Marketing', 'wpshout' ),
+	];
+
+	return $categories;
+}

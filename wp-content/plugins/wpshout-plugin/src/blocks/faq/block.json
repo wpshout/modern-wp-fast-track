@@ -20,7 +20,8 @@
             "lineHeight": true,
             "textAlign": true,
             "__experimentalFontFamily": true,
-            "__experimentalFontWeight": true
+            "__experimentalTextDecoration": true,
+            "__experimentalFontStyle": true
         }
     }
 }

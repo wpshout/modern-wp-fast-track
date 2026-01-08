@@ -7,5 +7,19 @@
     "editorScript": "file:./index.js",
     "allowedBlocks": [ 
         "wpshout/faq-item"
-    ]
+    ],
+    "supports": {
+        "color": {
+            "background": true,
+            "text": true,
+            "link": true
+        },
+        "typography": {
+            "fontSize": true,
+            "lineHeight": true,
+            "textAlign": true,
+            "__experimentalFontFamily": true,
+            "__experimentalFontWeight": true
+        }
+    }
 }

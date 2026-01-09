@@ -1,5 +1,6 @@
 {
     "$schema": "https://schemas.wp.org/trunk/block.json",
+    "apiVersion": 3,
     "name": "wpshout/faq-item",
     "title": "FAQ Item",
     "description": "Frequently asked question with an answer.",

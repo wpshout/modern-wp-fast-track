@@ -21,6 +21,17 @@ function wpshout_register_blocks() {
 	);
 }
 
+add_action( 'enqueue_block_assets', 'wpshout_enqueue_block_styles' );
+
+function wpshout_enqueue_block_styles() {
+	wp_register_style(
+		'wpshout-faq-block',
+		plugins_url( 'src/blocks/faq/style.css', __FILE__ ),
+		[],
+		filemtime( __DIR__ . '/src/blocks/faq/style.css' )
+	);
+}
+
 add_filter( 'block_categories_all', 'wpshout_register_block_categories' );
 
 function wpshout_register_block_categories( $categories ) {

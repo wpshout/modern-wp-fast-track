@@ -6,7 +6,8 @@
     "description": "List of frequently asked questions and answers.",
     "category": "marketing",
     "editorScript": "file:./index.js",
-    "allowedBlocks": [ 
+    "style": "wpshout-faq-block",
+    "allowedBlocks": [
         "wpshout/faq-item"
     ],
     "supports": {

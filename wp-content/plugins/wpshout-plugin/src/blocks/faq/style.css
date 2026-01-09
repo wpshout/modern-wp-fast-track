@@ -1,7 +1,7 @@
 .wp-block-wpshout-faq {
-    // background: green !important;
+    /* background: green !important; */
 }
 
 .wp-block-wpshout-faq .wp-block-wpshout-faq-item + .wp-block-wpshout-faq-item {
-  margin-top: var(--wp--style--block-gap);
+  margin-top: var(--wp--style--block-gap); /* Apply the global block gap from theme.json if defined. */
 }

@@ -42,3 +42,9 @@ function wpshout_register_block_categories( $categories ) {
 
 	return $categories;
 }
+
+// Uncomment this to disable contextual loading of block assets.
+// add_filter( 'should_load_separate_core_block_assets', '__return_false' );
+
+// Uncomment to disable the inlining of small CSS files.
+// add_filter( 'styles_inline_size_limit', '__return_zero' );

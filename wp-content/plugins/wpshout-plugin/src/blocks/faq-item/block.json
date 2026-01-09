@@ -18,5 +18,30 @@
     "style": "file:./style-index.css",
     "parent": [ 
         "wpshout/faq" 
-    ]
+    ],
+    "supports": {
+        "color": {
+            "background": true,
+            "text": true,
+            "link": true
+        },
+        "typography": {
+            "fontSize": true,
+            "lineHeight": true,
+            "textAlign": true,
+            "__experimentalFontFamily": true,
+            "__experimentalTextDecoration": true,
+            "__experimentalFontStyle": true
+        },
+        "spacing": {
+            "margin": true,
+            "padding": true
+        },
+        "__experimentalBorder": {
+            "color": true,
+            "radius": true,
+            "style": true,
+            "width": true
+        }
+    }
 }

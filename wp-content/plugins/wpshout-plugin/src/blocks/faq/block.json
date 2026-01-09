@@ -23,6 +23,17 @@
             "__experimentalFontFamily": true,
             "__experimentalTextDecoration": true,
             "__experimentalFontStyle": true
+        },
+        "spacing": {
+            "margin": true,
+            "padding": true,
+            "blockGap": true
+        },
+        "__experimentalBorder": {
+            "color": true,
+            "radius": true,
+            "style": true,
+            "width": true
         }
     }
 }

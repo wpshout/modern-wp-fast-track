@@ -3,6 +3,8 @@ import { InnerBlocks, useBlockProps, RichText } from '@wordpress/block-editor';
 import { CheckboxControl } from '@wordpress/components';
 import { quote } from '@wordpress/icons';
 
+import './style.scss';
+
 registerBlockType( 'wpshout/faq-item', {
     edit: ( { attributes, setAttributes } ) => {
         const { question, open } = attributes;

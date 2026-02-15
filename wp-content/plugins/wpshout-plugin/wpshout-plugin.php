@@ -21,6 +21,17 @@ function wpshout_register_blocks() {
 	);
 }
 
+add_action( 'enqueue_block_assets', 'wpshout_enqueue_block_styles' );
+
+function wpshout_enqueue_block_styles() {
+	wp_register_style(
+		'wpshout-faq-block',
+		plugins_url( 'src/blocks/faq/style.css', __FILE__ ),
+		[],
+		filemtime( __DIR__ . '/src/blocks/faq/style.css' )
+	);
+}
+
 add_filter( 'block_categories_all', 'wpshout_register_block_categories' );
 
 function wpshout_register_block_categories( $categories ) {
@@ -31,3 +42,9 @@ function wpshout_register_block_categories( $categories ) {
 
 	return $categories;
 }
+
+// Uncomment this to disable contextual loading of block assets.
+// add_filter( 'should_load_separate_core_block_assets', '__return_false' );
+
+// Uncomment to disable the inlining of small CSS files.
+// add_filter( 'styles_inline_size_limit', '__return_zero' );

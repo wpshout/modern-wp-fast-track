@@ -1,5 +1,6 @@
 {
     "$schema": "https://schemas.wp.org/trunk/block.json",
+    "apiVersion": 3,
     "name": "wpshout/faq-item",
     "title": "FAQ Item",
     "description": "Frequently asked question with an answer.",
@@ -14,7 +15,44 @@
         }
     },
     "editorScript": "file:./index.js",
+    "style": "file:./style-index.css",
     "parent": [ 
         "wpshout/faq" 
+    ],
+    "supports": {
+        "color": {
+            "background": true,
+            "text": true,
+            "link": true
+        },
+        "typography": {
+            "fontSize": true,
+            "lineHeight": true,
+            "textAlign": true,
+            "__experimentalFontFamily": true,
+            "__experimentalTextDecoration": true,
+            "__experimentalFontStyle": true
+        },
+        "spacing": {
+            "margin": true,
+            "padding": true
+        },
+        "__experimentalBorder": {
+            "color": true,
+            "radius": true,
+            "style": true,
+            "width": true
+        }
+    },
+    "styles": [
+        {
+            "name": "default",
+            "label": "Default",
+            "isDefault": true
+        },
+        {
+            "name": "outline",
+            "label": "Outline"
+        }
     ]
 }

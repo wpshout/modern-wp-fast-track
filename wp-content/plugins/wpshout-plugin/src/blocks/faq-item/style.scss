@@ -1,0 +1,12 @@
+.wp-block-wpshout-faq-item {
+    &::details-content {
+        padding-left: 1rem;
+    }
+}
+
+:root {
+    :where(.wp-block-wpshout-faq-item.is-style-outline) {
+        border: 2px solid currentColor;
+        padding: 0.667em 1.333em;
+    }
+}

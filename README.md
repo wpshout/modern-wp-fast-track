@@ -13,6 +13,7 @@ View branches for specific course modules:
 - [Module 8](https://github.com/wpshout/modern-wp-fast-track/tree/module-8) ([changes](https://github.com/wpshout/modern-wp-fast-track/compare/module-7..module-8))
 - [Module 9](https://github.com/wpshout/modern-wp-fast-track/tree/module-9) ([changes](https://github.com/wpshout/modern-wp-fast-track/compare/module-8..module-9))
 - [Module 10](https://github.com/wpshout/modern-wp-fast-track/tree/module-10) ([changes](https://github.com/wpshout/modern-wp-fast-track/compare/module-9..module-10))
+- [Module 11](https://github.com/wpshout/modern-wp-fast-track/tree/module-11) ([changes](https://github.com/wpshout/modern-wp-fast-track/compare/module-10..module-11))
 
 ## Requirements
 

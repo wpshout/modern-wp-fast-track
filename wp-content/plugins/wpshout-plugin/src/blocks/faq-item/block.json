@@ -8,12 +8,19 @@
         "open": {
             "type": "boolean"
         },
+        "openDefault": {
+            "type": "boolean",
+            "default": null
+        },
         "question": {
             "type": "string",
             "source": "html",
             "selector": "summary"
         }
     },
+    "usesContext": [
+        "wpshout/faq/open"
+    ],
     "editorScript": "file:./index.js",
     "style": "file:./style-index.css",
     "parent": [ 

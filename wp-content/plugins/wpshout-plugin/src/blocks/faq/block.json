@@ -10,6 +10,15 @@
     "allowedBlocks": [
         "wpshout/faq-item"
     ],
+    "attributes": {
+        "open": {
+            "type": "boolean",
+            "default": null
+        }
+    },
+    "providesContext": {
+        "wpshout/faq/open": "open"
+    },
     "supports": {
         "color": {
             "background": true,

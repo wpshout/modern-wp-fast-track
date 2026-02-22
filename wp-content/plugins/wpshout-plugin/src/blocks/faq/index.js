@@ -5,7 +5,7 @@ import { __ } from '@wordpress/i18n';
 import { Button, CheckboxControl, Modal, PanelBody, Placeholder, TextareaControl, ToolbarButton, ToolbarGroup } from '@wordpress/components';
 import { useDispatch, useSelect } from '@wordpress/data';
 import { useState } from '@wordpress/element';
-import { accordion, pencil } from '@wordpress/icons';
+import { details, pencil } from '@wordpress/icons';
 
 import { ReactComponent as Icon } from './icon.svg';
 
@@ -88,7 +88,7 @@ registerBlockType( 'wpshout/faq', {
                 </InspectorControls>
                 { ! blockIds.length && (
                     <Placeholder
-                        icon={ accordion }
+                        icon={ details }
                         label="Add FAQ items"
                         instructions="Add an FAQ item or generate suggestions for questions and answers">
                         <Button
